@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-details.css">
+    <title>Project Details</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">LOGO</div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="icon">⬛</i>
+                    Dashboard
+                </a>
+                <a href="project-details.html" class="nav-item active">
+                    <i class="icon">👥</i>
+                    My Projects
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="icon">📋</i>
+                    Tasks
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="icon">👥</i>
+                    My team
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="icon">⚙️</i>
+                    Settings
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="icon">❓</i>
+                    Help
+                </a>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header class="header">
+                <div class="header-tabs">
+                    <button class="tab active">Ideator</button>
+                    <button class="tab">Contributor</button>
+                    <button class="tab">Investor</button>
+                </div>
+
+                <div class="header-right">
+                    <button class="icon-btn">✉️</button>
+                    <button class="icon-btn">🔔<span class="badge">2</span></button>
+                    <div class="vertical-line">|</div>
+                    <div class="user-profile">
+                        <img src="./asset/user.png" alt="Profile" class="profile-img">
+                        <span>Cartisshyna</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="project-overview">
+                <h2>Project overview</h2>
+                
+                <div class="overview-content">
+                    <div class="project-info">
+                        <div class="info-group">
+                            <label>Title</label>
+                            <div class="info-value">xyz projects</div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <label>Category</label>
+                            <div class="info-value">Fintech</div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <label>Problem statement</label>
+                            <div class="info-value">High remittance fees</div>
+                        </div>
+                    </div>
+
+                    <div class="ai-score-card">
+                        <div class="score-header">
+                            <span class="ai-icon">🤖</span>
+                            AI Score
+                        </div>
+                        <div class="score-circle">
+                            <div class="score">82%</div>
+                        </div>
+                        <div class="feedback">
+                            <span class="chat-icon">💬</span>
+                            <div class="feedback-text">
+                                <div>Initial feedback</div>
+                                <div class="feedback-detail">Strong MVP, improve deck</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h3>Contributor timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item done">
+                            <div class="timeline-dot">✓</div>
+                            <span>Market Research</span>
+                        </div>
+                        <div class="timeline-item done">
+                            <div class="timeline-dot">✓</div>
+                            <span>Wireframes</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">○</div>
+                            <span>MVP Testing</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">○</div>
+                            <span>Deck & Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upload-section">
+                    <h3>Upload zone</h3>
+                    <div class="upload-buttons">
+                        <button class="upload-btn">
+                            <i class="icon">📄</i>
+                            Pitch Deck
+                            <span class="add-icon">+</span>
+                        </button>
+                        <button class="upload-btn">
+                            <i class="icon">🔗</i>
+                            Video Link
+                            <span class="add-icon">+</span>
+                        </button>
+                        <button class="upload-btn">
+                            <i class="icon">🖼️</i>
+                            Screenshots
+                            <span class="add-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="review-btn">Send for GOLIVE review</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Auth Page</title>
+</head>
+<body>
+  <div class="register-container">
+    <div class="form-section">
+      <!-- REGISTER FORM -->
+      <form class="form" id="registerForm">
+        <h1 class="form-heading">Create your account</h1>
+        <label for="reg-name">Name</label>
+        <input type="text" id="reg-name" placeholder="Enter your name" required />
+
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" placeholder="Enter your email" required />
+
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" placeholder="Enter your password" required />
+
+        <label for="reg-confirm-password">Confirm Password</label>
+        <input type="password" id="reg-confirm-password" placeholder="Confirm your password" required />
+
+        <div class="terms">
+          <input type="checkbox" id="terms" />
+          <label for="terms">Terms & conditions apply*</label>
+        </div>
+
+        <div class="error" id="registerError"></div>
+
+        <button type="submit" class="register-btn">Register</button>
+
+        <p class="login-link">
+          Already have an account? <a onclick="toggleForm('login')">Login</a>
+        </p>
+      </form>
+
+      <!-- LOGIN FORM -->
+      <form class="form hidden" id="loginForm">
+        <h1 class="form-heading">Welcome Back</h1>
+
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required />
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required />
+
+        <div class="form-flex">
+          <label class="remember-me">
+            <input type="checkbox" id="rememberMe" />
+            Remember me
+          </label>
+          <a href="#" class="forgot-password" onclick="toggleForm('reset')">Forgot Password?</a>
+        </div>
+
+        <div class="error" id="loginError"></div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <p class="login-link">
+          Don’t have an account?
+          <a onclick="toggleForm('register')">Sign Up</a>
+        </p>
+      </form>
+
+      <!-- RESET PASSWORD FORM -->
+      <form class="form hidden" id="resetForm">
+        <h1 class="form-heading">Reset Password</h1>
+        <p>Enter your email to reset your password</p>
+
+        <label for="reset-email">Email</label>
+        <input type="email" id="reset-email" placeholder="Enter your email" required />
+
+        <div class="error" id="resetError"></div>
+
+        <button type="submit" class="login-btn">Submit</button>
+
+        <p class="login-link">
+          Back to <a onclick="toggleForm('login')">Login</a>
+        </p>
+      </form>
+    </div>
+
+  <!-- PASSWORD RESET FROM EMAIL LINK -->
+<form class="form hidden" id="newPasswordForm">
+  <h1 class="form-heading">Set New Password</h1>
+  <p>Enter your new password below</p>
+  <label for="new-password">New Password</label>
+  <input type="password" id="new-password" placeholder="New password" required />
+  <label for="confirm-new-password">Confirm Password</label>
+  <input type="password" id="confirm-new-password" placeholder="Confirm password" required />
+  <div class="error" id="newPassError"></div>
+  <button type="submit" class="login-btn">Reset Password</button>
+</form>
+
+    <div class="image-section">
+      <img src="./asset/img-12.png" alt="illustration" />
+    </div>
+  </div>
+  
+  <div class="register-container hidden" id="emailVerifyForm">
+    <!-- LEFT SIDE - FORM -->
+    <div class="form-section">
+      <form class="form">
+        <h1 class="form-heading">Verify Your Email</h1>
+        <p>We have sent a verification link to your email.</p>
+        <button type="button" class="login-btn" onclick="resendEmail()">Resend Email</button>
+        <p class="login-link">
+          Back to <a href="#" onclick="toggleForm('login')">Login</a>
+        </p>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <img src="./asset/img-13.png" alt="Email sent" />
+    </div>
+  </div>
+
+  <div class="register-container hidden" id="resetSuccessForm">
+    <!-- LEFT SIDE - FORM -->
+    <div class="form-section">
+      <form class="form">
+        <h1 class="form-heading">Password reset successful!</h1>
+        <p>Your password has been reset successfully</p>
+        <button type="button" class="login-btn" onclick="toggleForm('login')">Login</button>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <img src="./asset/img-13.png" alt="Success" />
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

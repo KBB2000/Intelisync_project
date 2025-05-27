@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">LOGO</div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-target="dashboard-content">
+        <i class="icon">⬛</i>
+        Dashboard
+    </a>
+                <a href="project-details.html" class="nav-item">
+                    <i class="icon">👥</i>
+                    My Projects
+                </a>
+                <a href="dashboard.html" class="nav-item active">
+                    <i class="icon">=</i>
+                    Task
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="icon">👥</i>
+                    Deals
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="icon">⚙️</i>
+                    Settings
+                </a>
+                <a href="help.html" class="nav-item">
+                    <i class="icon">❓</i>
+                    Help
+                </a>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <!-- Dashboard Content -->
+            <div id="dashboard-content" class="page-content">
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle">☰</button>
+                <!-- Header -->
+                <header class="header">
+                    <div class="header-tabs">
+                        <button class="tab active">Ideator</button>
+                        <button class="tab">Contributor</button>
+                        <button class="tab">Investor</button>
+                </div>
+
+            <div class="header-right">
+                    <button class="icon-btn">✉️</button>
+                    <button class="icon-btn">🔔<span class="badge">2</span></button>
+                    <div class="vertical-line ">
+                        |
+                    </div>
+                    <div class="user-profile">
+                        <img src="./asset/user.png" alt="Profile" class="profile-img">
+                        <span>Cartisshyna</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="project-section">
+                <div class="section-header">
+                    <h1>My Project</h1>
+                    <button class="new-project-btn">New Project</button>
+                </div>
+
+                <div class="project-cards">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>AI Powered Health Assistant</h3>
+                            <span class="status in-progress">In Progress</span>
+                        </div>
+                        <div class="checklist">
+                            <div class="check-item done">
+                                <span class="check-icon">✓</span>
+                                Market Research
+                            </div>
+                            <div class="check-item done">
+                                <span class="check-icon">✓</span>
+                                Wireframes Completed
+                            </div>
+                            <div class="check-item">
+                                <span class="check-icon">○</span>
+                                Pitch Deck Ready
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="contributors">
+                                <img src="./asset/user.png" alt="Contributor">
+                                <img src="./asset/user.png" alt="Contributor">
+                                <button class="add-contributor">+</button>
+                                <span>2 Contributors</span>
+                            </div>
+                            <button class="continue-btn">Continue : Complete Wireframes</button>
+                        </div>
+                    </a>
+
+                    <a href="project-details.html" class="project-card">
+                        <div class="card-header">
+                            <h3>Decentralized Learning Platform</h3>
+                            <span class="status planning">Planning</span>
+                        </div>
+                        <div class="checklist">
+                            <div class="check-item done">
+                                <span class="check-icon">✓</span>
+                                Idea defined
+                            </div>
+                            <div class="check-item">
+                                <span class="check-icon">○</span>
+                                Wireframes Completed
+                            </div>
+                            <div class="check-item">
+                                <span class="check-icon">○</span>
+                                Pitch Deck Ready
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="contributors">
+                                <img src="./asset/user.png" alt="Contributor">
+                                <button class="add-contributor">+</button>
+                                <span>1 Contributors</span>
+                            </div>
+                            <button class="continue-btn">Continue : Define user stories</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-sidebar">
+                    <!-- Checklist -->
+                    <div class="sidebar-card">
+                        <h3>Check list</h3>
+                        <div class="checklist">
+                            <div class="check-item done">
+                                <span class="check-icon">✓</span>
+                                Submit idea
+                            </div>
+                            <div class="check-item done">
+                                <span class="check-icon">✓</span>
+                                Wireframe Uploaded
+                            </div>
+                            <div class="check-item">
+                                <span class="check-icon">○</span>
+                                Pitch deck Uploaded
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Contributors Progress</h3>
+                        <div class="checklist">
+                            <div class="check-item done">
+                                <span class="check-icon">✓</span>
+                                Wireframe by UX_Anna
+                            </div>
+                            <div class="check-item">
+                                <span class="check-icon">○</span>
+                                MVP by dev_joey
+                            </div>
+                            <div class="check-item">
+                                <span class="check-icon">○</span>
+                                Market Analysis by CPT-4
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Quick Access</h3>
+                        <div class="quick-access">
+                            <button class="quick-btn">
+                                <i class="icon">⬆️</i>
+                                Upload Pitch deck
+                            </button>
+                            <button class="quick-btn">
+                                <i class="icon">🎥</i>
+                                Add Video demo
+                            </button>
+                            <button class="quick-btn">
+                                <i class="icon">📈</i>
+                                View Contributor Timeline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="project-content" class="page-content" style="display: none;">
+                    <!-- Project Overview -->
+                    <div class="project-overview">
+                        <h2>Project overview</h2>
+                        
+                        <div class="overview-content">
+                            <div class="project-info">
+                                <div class="info-group">
+                                    <label>Title</label>
+                                    <div class="info-value">xyz projects</div>
+                                </div>
+                                
+                                <div class="info-group">
+                                    <label>Category</label>
+                                    <div class="info-value">Fintech</div>
+                                </div>
+                                
+                                <div class="info-group">
+                                    <label>Problem statement</label>
+                                    <div class="info-value">High remittance fees</div>
+                                </div>
+                            </div>
+
+                            <div class="ai-score-card">
+                                <div class="score-header">
+                                    <span class="ai-icon">🤖</span>
+                                    AI Score
+                                </div>
+                                <div class="score-circle">
+                                    <div class="score">82%</div>
+                                </div>
+                                <div class="feedback">
+                                    <span class="chat-icon">💬</span>
+                                    <div class="feedback-text">
+                                        <div>Initial feedback</div>
+                                        <div class="feedback-detail">Strong MVP, improve deck</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-section">
+                            <h3>Contributor timeline</h3>
+                            <div class="timeline">
+                                <div class="timeline-item done">
+                                    <div class="timeline-dot">✓</div>
+                                    <span>Market Research</span>
+                                </div>
+                                <div class="timeline-item done">
+                                    <div class="timeline-dot">✓</div>
+                                    <span>Wireframes</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot">○</div>
+                                    <span>MVP Testing</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot">○</div>
+                                    <span>Deck & Video</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upload-section">
+                            <h3>Upload zone</h3>
+                            <div class="upload-buttons">
+                                <button class="upload-btn">
+                                    <i class="icon">📄</i>
+                                    Pitch Deck
+                                    <span class="add-icon">+</span>
+                                </button>
+                                <button class="upload-btn">
+                                    <i class="icon">🔗</i>
+                                    Video Link
+                                    <span class="add-icon">+</span>
+                                </button>
+                                <button class="upload-btn">
+                                    <i class="icon">🖼️</i>
+                                    Screenshots
+                                    <span class="add-icon">+</span>
+                                </button>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="review-btn">Send for GOLIVE review</button>
+                                <button class="save-btn">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

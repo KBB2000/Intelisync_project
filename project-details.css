@@ -1,0 +1,365 @@
+/* Import existing styles */
+@import url('dashboard.css');
+
+/* Project Overview Styles */
+.project-overview {
+    padding: 24px;
+}
+
+.project-overview h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #001B3B;
+    margin-bottom: 24px;
+}
+
+.overview-content {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+    .project-overview {
+        padding: 16px;
+    }
+
+    .overview-content {
+        flex-direction: column;
+    }
+
+    .ai-score-card {
+        width: 100%;
+    }
+
+    .timeline {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .timeline::before {
+        left: 16px;
+        width: 2px;
+        top: 0;
+        bottom: 0;
+        height: auto;
+    }
+
+    .timeline-item {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 16px;
+        padding-left: 16px;
+    }
+
+    .timeline-item span {
+        text-align: left;
+    }
+
+    .upload-buttons {
+        flex-direction: column;
+    }
+
+    .upload-btn {
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .review-btn, .save-btn {
+        width: 100%;
+    }
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+.info-value {
+    background: #F5F5F5;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* AI Score Card */
+.ai-score-card {
+    width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.score-circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 24px;
+    background: conic-gradient(#4CAF50 82%, #E0E0E0 82%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.score-circle::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 50%;
+}
+
+.score {
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    color: #001B3B;
+}
+
+.feedback {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+
+.feedback-text {
+    font-size: 14px;
+}
+
+.feedback-text div:first-child {
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.feedback-detail {
+    color: #001B3B;
+    font-weight: 500;
+}
+
+/* Timeline Section */
+.timeline-section {
+    margin-bottom: 48px;
+}
+
+.timeline-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #001B3B;
+    margin-bottom: 24px;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    padding: 0 16px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background: #E0E0E0;
+    z-index: 0;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-dot {
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline-item.done .timeline-dot {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+.timeline-item span {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Upload Section */
+.upload-section {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #001B3B;
+    margin-bottom: 24px;
+}
+
+.upload-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.upload-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 16px;
+    border: 2px dashed #E0E0E0;
+    border-radius: 8px;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.upload-btn:hover {
+    border-color: #0052CC;
+    color: #0052CC;
+}
+
+.add-icon {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.review-btn {
+    padding: 12px 24px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.review-btn:hover {
+    background: #43A047;
+}
+
+.save-btn {
+    padding: 12px 24px;
+    background: #F5F5F5;
+    color: #666;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.save-btn:hover {
+    background: #E0E0E0;
+}
+
+@media (max-width: 768px) {
+    .project-overview {
+        padding: 16px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .timeline::before {
+        left: 50%;
+        width: 2px;
+        top: 0;
+        bottom: 0;
+        height: auto;
+    }
+
+    .timeline-item {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .timeline-item span {
+        text-align: left;
+    }
+
+    .upload-buttons {
+        flex-direction: column;
+    }
+
+    .upload-btn {
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .review-btn, .save-btn {
+        width: 100%;
+    }
+}
